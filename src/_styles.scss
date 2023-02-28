@@ -1,0 +1,28 @@
+.nav_container {
+  background-color: rgb(255, 207, 149);
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0 100px 0 100px;
+
+    a {
+      text-decoration: none;
+    }
+
+    ul li {
+      padding: 10px;
+    }
+    .nav_menu {
+      list-style: none;
+      display: flex;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin-left: 20px;
+    }
+  }
+}
