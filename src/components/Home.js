@@ -3,6 +3,7 @@ import "../_reset.scss";
 import "../_styles.scss";
 import Navbar from "./Navbar";
 import pic_1 from "../images/pic_1.jpg";
+import Carousel from "./Carousel";
 
 function Home() {
   return (
@@ -11,7 +12,7 @@ function Home() {
         <Navbar />;
       </div>
       <div>
-        <img src={pic_1} alt="pic-1" />
+        <Carousel />
       </div>
     </>
   );
