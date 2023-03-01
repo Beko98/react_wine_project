@@ -14,7 +14,6 @@ const Carousel = () => {
       <Swiper
         spaceBetween={50}
         // slidesPerView={2}
-        effect="fade"
         loop={true}
         pagination={{
           clickable: true,

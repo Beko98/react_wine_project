@@ -11,7 +11,7 @@ function Home() {
       <div className="nav_container">
         <Navbar />;
       </div>
-      <div>
+      <div className="Carousel-container">
         <Carousel />
       </div>
     </>
