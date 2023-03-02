@@ -40,21 +40,20 @@
 
 .mySwiper {
   --swiper-pagination-top: 90%;
-  --swiper-pagination-bullet-background-color: white;
-}
 
-.swiper-pagination-bullet {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 12px;
-  margin: 0 5px;
-  width: 12px;
-}
+  .swiper-pagination-bullet {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 8px;
+    margin: 0 5px;
+    width: 8px;
+  }
 
-.swiper-pagination-bullet:hover {
-  background-color: #333;
-  border-color: #333;
-  color: #fff;
+  .swiper-pagination-bullet:hover {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+  }
 }
