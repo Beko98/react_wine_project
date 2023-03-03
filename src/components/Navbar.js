@@ -17,7 +17,7 @@ function Navbar() {
             <Link to="/">{i18next.t('home')}</Link>
           </li>
           <li>
-            <Link to="/shop">Shop</Link>
+            <Link to="/shop">Product</Link>
           </li>
           <li>
             <Link to="/aboutUs">About Us</Link>
