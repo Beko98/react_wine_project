@@ -7,20 +7,17 @@ i18n.init({
   resources: {
     en: {
       translation: {
-        navbar: {
           home: "Home",
           shop: "Shop",
           aboutUs: "About Us",
-        },
       },
     },
     ka: {
       translation: {
-        navbar: {
           home: "მთავარი",
           shop: "მაღაზია",
           aboutUs: "ჩვენს შესახებ",
-        },
+        
       },
     },
   },
@@ -41,4 +38,4 @@ i18n.init({
 //   );
 // }
 
-export default i18next;
+export default i18n;
