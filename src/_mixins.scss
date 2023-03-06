@@ -1,0 +1,45 @@
+@mixin circle{
+    .circle{
+        background: #b1af6a;
+        border-radius: 50%;
+        content: "";
+        height: 6px;
+        margin: 0 0 0 -10px;
+        position: absolute;
+        width: 6px;
+          
+      }
+      
+      
+      .circle::before{
+        content: '';
+        width: 86px;
+        border-bottom: 1px solid #b1af6a;
+        display: block;
+        position: relative;
+        top: 2px;
+        left: 6px;
+          
+      }
+      .circle::after{
+        content: "||";
+        position: relative;
+        top: -6px;
+        left: 90px;
+        color: #b1af6a;
+      }
+
+}
+
+
+
+@mixin stick {
+    height: 20px;
+    width: 4px;
+    background-color: #333;
+    margin: 10px;
+  }
+  
+
+
+  

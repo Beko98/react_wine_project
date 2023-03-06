@@ -1,5 +1,6 @@
 import React from "react";
-import fine_wines from "../images/fine_wines.png";
+// import fine_wines from "../images/fine_wines.png";
+import vino1 from "../images/vino1.png"
 import { Link } from "react-router-dom";
 import i18next from "../i18n/i18n";
 function Navbar() {
@@ -10,7 +11,9 @@ function Navbar() {
     <>
       <nav className="nav">
         <Link to="/">
-          <img className="logo" src={fine_wines} alt="wg" />
+          {/* <img className="logo" src={fine_wines} alt="wg" /> */}
+          <img className="logo"  src={vino1} alt="wg" />
+
         </Link>
         <ul className="nav_menu">
           <li>
