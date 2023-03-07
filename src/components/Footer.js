@@ -18,60 +18,62 @@ import { FaPinterestP } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="footer_container">
-      <div className="footer_divs">
-        <img className="logo" src={vino} alt="wg" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque.
-        </p>
-        <p>
-          Quisque feugiat mattis ornare. Suspendisse sit amet dictum felis.
-          Nullam ac est id lacus, sed non mauris.
-        </p>
-      </div>
-      <div className="footer_divs">
-        <div className="send">
-          <TbSend />
-          <h3>1-677-124-44227</h3>
+    <>
+      <div className="footer_container">
+        <div className="footer_divs">
+          <img className="logo" src={vino} alt="wg" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit scelerisque.
+          </p>
+          <p>
+            Quisque feugiat mattis ornare. Suspendisse sit amet dictum felis.
+            Nullam ac est id lacus, sed non mauris.
+          </p>
         </div>
+        <div className="footer_divs">
+          <div className="icons">
+            <TbSend />
+            <h3>1-677-124-44227</h3>
+          </div>
 
-        <div className="location">
-          <GoLocation />
-          <h3>184 Main Collins Street Victoria 807</h3>
-        </div>
+          <div className="icons">
+            <GoLocation />
+            <h3>184 Main Collins Street Victoria 807</h3>
+          </div>
 
-        <div className="envelope">
-          <RxEnvelopeClosed />
-          <h3>vino@info.com</h3>
-        </div>
+          <div className="icons">
+            <RxEnvelopeClosed />
+            <h3>vino@info.com</h3>
+          </div>
 
-        <div className="global">
-          <AiOutlineGlobal />
-          <h3>vino.example.com</h3>
-        </div>
+          <div className="icons">
+            <AiOutlineGlobal />
+            <h3>vino.example.com</h3>
+          </div>
 
-        <div className="socials">
-          <FiInstagram className="icons" />
-          <ImTwitter className="icons" />
-          <ImFacebook className="icons" />
-          <FaPinterestP className="icons" />
+          <div className="socials">
+            <FiInstagram className="social_icons" />
+            <ImTwitter className="social_icons" />
+            <ImFacebook className="social_icons" />
+            <FaPinterestP className="social_icons" />
+          </div>
+        </div>
+        <div className="footer_divs">
+          <h6>January 20, 2017</h6>
+          <h3>Etiam risus nunc, feugiat id commodo ut, laoreet in augue</h3>
+          <h6>December 18, 2018</h6>
+          <h3>Vestibulum scelerisque molestie enim, in scelerisque arcu</h3>
+        </div>
+        <div className="footer_divs">
+          <img src={pic_9} alt="pic_9" />
+          <img src={pic_10} alt="pic_10" />
+          <img src={pic_11} alt="pic_11" />
+          <img src={pic_12} alt="pic_12" />
+          <img src={pic_13} alt="pic_13" />
+          <img src={pic_14} alt="pic_14" />
         </div>
       </div>
-      <div className="footer_divs">
-        <h6>January 20, 2017</h6>
-        <h3>Etiam risus nunc, feugiat id commodo ut, laoreet in augue</h3>
-        <h6>December 18, 2018</h6>
-        <h3>Vestibulum scelerisque molestie enim, in scelerisque arcu</h3>
-      </div>
-      <div className="footer_divs">
-        <img src={pic_9} alt="pic_9" />
-        <img src={pic_10} alt="pic_10" />
-        <img src={pic_11} alt="pic_11" />
-        <img src={pic_12} alt="pic_12" />
-        <img src={pic_13} alt="pic_13" />
-        <img src={pic_14} alt="pic_14" />
-      </div>
-    </div>
+    </>
   );
 }
 
