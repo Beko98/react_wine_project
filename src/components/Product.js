@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 
-function AboutUs() {
+function Product() {
   return (
     <>
       <div>AboutUs</div>;
@@ -10,4 +10,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default Product;

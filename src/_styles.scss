@@ -8,11 +8,12 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    margin: 0 100px 0 100px;
+    margin: 15px 100px 0 100px;
 
     a {
       text-decoration: none;
       color: $websiteColor;
+      font-size: 18px;
     }
 
     ul li {
@@ -48,6 +49,18 @@
 .mySwiper {
   --swiper-pagination-top: 90%;
   margin-bottom: 50px;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
 
   img {
     max-width: 100%;
@@ -85,24 +98,6 @@
     margin-bottom: 130px;
   }
 }
-
-// .container {
-//   display: flex;
-//   flex-wrap: wrap;
-//   align-items: center;
-//   justify-content: center;
-//   flex-direction: column;
-//     .image_text{
-//       display: flex;
-//       margin-bottom: 100px;
-//        p{
-//         margin-top: 50px;
-//         margin: 50px 80px 0 80px;
-//         width: 20%
-//        }
-//     }
-
-// }
 
 .container {
   // display: flex;
