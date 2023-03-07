@@ -45,10 +45,10 @@
   --swiper-pagination-top: 90%;
   margin-bottom: 50px;
 
-    img{
-      max-width: 100%;
-      width: 100%;
-    }
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
 
   .swiper-pagination-bullet {
     background-color: #fff;
@@ -67,28 +67,26 @@
   }
 }
 
-.title{
+.title {
   display: flex;
   flex-direction: column;
-  h2{
-    margin: 0 auto ;
+  h2 {
+    margin: 0 auto;
     font-size: 40px;
     color: $text;
     margin-bottom: 15px;
   }
-  hr{
+  hr {
     width: 5%;
     margin-bottom: 130px;
   }
 }
 
-
-
 // .container {
 //   display: flex;
-//   flex-wrap: wrap; 
+//   flex-wrap: wrap;
 //   align-items: center;
-//   justify-content: center;  
+//   justify-content: center;
 //   flex-direction: column;
 //     .image_text{
 //       display: flex;
@@ -100,17 +98,15 @@
 //        }
 //     }
 
-// }  
+// }
 
-
-
-.container{
+.container {
   // display: flex;
   // flex-direction: row;
   // justify-content: center;
   // align-items: center;
   // gap: 140px;
-  .repeat{
+  .repeat {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -118,90 +114,133 @@
     gap: 140px;
     margin-bottom: 100px;
   }
-    
-    .center_images{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-        img{
-          max-width: 100%;
-          width: 100%;
-        }
-        .bottle{
-          width: 85%;
-        }
-    }
 
-    .left{
+  .center_images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+    .bottle {
+      width: 85%;
+    }
+  }
+
+  .left {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    h2 {
       font-size: 20px;
-      display: flex;
-      flex-direction: column;
+      font-family: cursive, sans-serif;
+      margin-bottom: 15px;
+      color: $websiteColor;
+    }
+    h3 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      // font-family: catamaran, sans-serif;
+      font-family: Cinzel, serif;
+      color: $text;
+    }
+    p {
+      margin-bottom: 15px;
+      max-width: 100%;
+      width: 80%;
+      font-size: 18px;
       align-items: self-end;
-      h2{
-        font-size: 20px;
-        font-family: cursive, sans-serif;
-        margin-bottom: 15px;
-        color: $websiteColor;
-
-        
-      }
-        h3{
-          font-size: 30px;
-          margin-bottom: 20px;
-          // font-family: catamaran, sans-serif;
-          font-family: Cinzel,serif;
-          color: $text;
-
-        }
-          p{
-            margin-bottom: 15px;
-            max-width: 100%;
-            width: 80%;
-            font-size: 18px;
-            align-items: self-end;
-            color: $text;
-
-          }
+      color: $text;
     }
-    .right{
+  }
+  .right {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    h2 {
       font-size: 20px;
-      display: flex;
-      flex-direction: column;
-      h2{
-        font-size: 20px;
-        font-family: cursive, sans-serif;
-        margin-bottom: 15px;
-        color: $websiteColor
-
-        
-      }
-        h3{
-          font-size: 30px;
-          margin-bottom: 20px;
-          color: $text;
-          
-
-
-        }
-          p{
-            margin-bottom: 15px;
-            max-width: 100%;
-            color: $text;
-
-          }
+      font-family: cursive, sans-serif;
+      margin-bottom: 15px;
+      color: $websiteColor;
     }
-
-  
-    
+    h3 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: $text;
+    }
+    p {
+      margin-bottom: 15px;
+      max-width: 100%;
+      color: $text;
+    }
+  }
 }
-
-
-
-
 
 .stick {
   @include stick;
 }
-
 @include circle;
 
+.footer_container {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(33, 30, 26);
+  .footer_divs {
+    color: $white;
+    width: 300px;
+    margin-top: 50px;
+    line-height: 1.6;
+    h6 {
+      margin-top: 15px;
+    }
+    .send {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      h3 {
+        margin-left: 10px;
+      }
+    }
+    .location {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      h3 {
+        margin-left: 10px;
+      }
+    }
+    .envelope {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      h3 {
+        margin-left: 10px;
+      }
+    }
+    .global {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      h3 {
+        margin-left: 10px;
+      }
+    }
+    .socials {
+      .icons {
+        margin-right: 20px;
+      }
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    .logo {
+      width: 100px;
+    }
+    img {
+      width: 80px;
+      margin: 0 20px 20px 0;
+    }
+  }
+}
