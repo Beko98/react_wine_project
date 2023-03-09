@@ -1,6 +1,6 @@
 import React from "react";
 import "../_reset.scss";
-import "../_styles.scss";
+import "../_home.scss";
 import Navbar from "./Navbar";
 import Carousel from "./Carousel";
 import img_6 from "../images/pic_6.png";
