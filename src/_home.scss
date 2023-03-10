@@ -1,14 +1,13 @@
 @import "./colors";
 @import "./mixins";
 
-.nav_container {
-  background-color: $white;
+
   .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    margin: 15px 100px 0 100px;
+    margin: 15px 100px 15px 100px;
 
     a {
       text-decoration: none;
@@ -17,7 +16,7 @@
     }
 
     ul li {
-      padding: 10px;
+      padding-right: 60px;
     }
     .nav_menu {
       list-style: none;
@@ -32,7 +31,7 @@
       width: 100%;
     }
   }
-}
+
 
 .Carousel-container {
   margin-bottom: 100px;
@@ -174,6 +173,8 @@
       margin-bottom: 15px;
       max-width: 100%;
       color: $text;
+      width: 80%;
+      font-size: 18px;
     }
   }
 }
@@ -186,8 +187,8 @@
 .footer_container {
   display: flex;
   justify-content: space-around;
-  background-color: rgb(33, 30, 26);
-  padding: 50px 0 110px;
+  background-color: $footer;
+  padding: 50px 20px 110px;
 
   .footer_divs {
     color: $white;

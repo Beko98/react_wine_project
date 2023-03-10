@@ -1,10 +1,17 @@
 import React from "react";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
+import ProductDiv from "./ProductDiv";
+import "../_product.scss"
+
 
 function Product() {
   return (
     <>
-      <div>AboutUs</div>;
+      <Navbar />
+      <div>
+        <ProductDiv />
+      </div>
       <Footer />
     </>
   );

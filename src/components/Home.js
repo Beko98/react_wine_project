@@ -12,7 +12,7 @@ function Home() {
   return (
     <>
       <div className="nav_container">
-        <Navbar />;
+        <Navbar />
       </div>
       <div className="Carousel-container">
         <Carousel />

@@ -1,10 +1,12 @@
 import React from "react";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 function AboutUs() {
   return (
     <>
-      <div>AboutUs</div>;
+      <Navbar />
+      <div>AboutUs</div>
       <Footer />
     </>
   );
