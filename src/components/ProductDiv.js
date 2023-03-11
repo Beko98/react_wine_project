@@ -2,11 +2,12 @@ import React from 'react'
 
 
 
-function ProductDiv() {
+function ProductDiv({title}) {
+
   return (
     <div className='product_div'>
-        <h2>PRODUCTS</h2>
-        <h3>Home  /  Products</h3>
+        <h2>{title.toUpperCase()}</h2>
+        <h3>Home  / {title}</h3>
     </div>
   )
 }
