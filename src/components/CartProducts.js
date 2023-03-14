@@ -9,6 +9,7 @@ function CartProducts(props) {
         <img src={productImage} alt={id} />
         <h2>{productName}</h2>
         <h3>${price}</h3>
+        <button className='addToCartBtn'>Add To Cart</button>
       </div>
     
     </>
