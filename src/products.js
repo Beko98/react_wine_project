@@ -25,7 +25,7 @@ export const PRODUCTS = [
     id: 3,
     productName: "COLTIBUONO",
     price: 41.11,
-    productImage: pic_19,
+    productImage: pic_18,
   },
   {
     id: 4,
