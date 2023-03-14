@@ -1,23 +1,24 @@
 import i18n from "i18next";
-// import { useTranslation, initReactI18next } from "react-i18next";
+import { useTranslation, initReactI18next } from "react-i18next";
 
-i18n.init({
+i18n.use(initReactI18next).init({
   lng: "en",
   debug: true,
   resources: {
     en: {
       translation: {
-          home: "Home",
-          shop: "Shop",
-          aboutUs: "About Us",
+        home: "Home",
+        product: "Product",
+        aboutUs: "About Us",
+        changeLanguage: "Geo",
       },
     },
     ka: {
       translation: {
-          home: "მთავარი",
-          shop: "მაღაზია",
-          aboutUs: "ჩვენს შესახებ",
-        
+        home: "მთავარი",
+        product: "პროდუქტი",
+        aboutUs: "ჩვენს შესახებ",
+        changeLanguage: "Eng",
       },
     },
   },
