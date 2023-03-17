@@ -6,6 +6,7 @@ function LanguageSwitcher() {
   const currentLanguage = i18n.language;
   return (
     <button
+    className="languageSwitcher"
       onClick={() =>
         i18n.changeLanguage(currentLanguage === "en" ? "ka" : "en")
       }

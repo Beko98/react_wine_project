@@ -13,10 +13,12 @@
       text-decoration: none;
       color: $websiteColor;
       font-size: 18px;
+      padding-top: 5px;
     }
 
     ul li {
       padding-right: 60px;
+      padding-top: 5px;
     }
     .nav_menu {
       list-style: none;
@@ -31,6 +33,16 @@
     }
     .cart{
       margin-left: 100px;
+    }
+    .languageSwitcher{
+      border: none;
+      padding: 5px 15px;
+      background-color: $Lswitch;
+      font-weight: 600;
+      color: white;
+      border-radius: 15px;
+      margin-left: 30px;
+      cursor: pointer;
     }
   }
 

@@ -1,5 +1,5 @@
 import i18n from "i18next";
-import { useTranslation, initReactI18next } from "react-i18next";
+import { initReactI18next } from "react-i18next";
 
 i18n.use(initReactI18next).init({
   lng: "en",
@@ -24,19 +24,5 @@ i18n.use(initReactI18next).init({
   },
 });
 
-// function LanguageSwitcher() {
-//   const { i18n } = useTranslation();
-
-//   function handleLanguageChange(event) {
-//     i18next.changeLanguage(event.target.value);
-//   }
-
-//   return (
-//     <select onChange={handleLanguageChange}>
-//       <option value="en">English</option>
-//       <option value="ka">Georgian</option>
-//     </select>
-//   );
-// }
 
 export default i18n;
