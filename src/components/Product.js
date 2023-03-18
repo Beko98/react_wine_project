@@ -5,15 +5,6 @@ import ProductDiv from "./ProductDiv";
 import "../_product.scss"
 import {PRODUCTS} from "../products"
 import CartProducts from "./CartProducts";
-// import pic_16 from "../images/pic_16.jpeg";
-// import pic_17 from "../images/pic_17.jpeg";
-// import pic_18 from "../images/pic_18.jpeg";
-// import pic_19 from "../images/pic_19.jpeg";
-// import pic_20 from "../images/pic_20.jpeg";
-// import pic_21 from "../images/pic_21.jpeg";
-// import pic_22 from "../images/pic_22.jpeg";
-// import pic_23 from "../images/pic_23.jpeg";
-// import pic_24 from "../images/pic_24.jpeg";
 
 
 
