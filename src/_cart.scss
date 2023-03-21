@@ -20,7 +20,7 @@
     height: 300px;
         .countHandler{
                 input{
-                    width: 32%;
+                    width: 47px;
                     height: 40%;
                     text-align: center;
                     margin-top: 35px;
@@ -40,5 +40,31 @@
         img{
             width: 120px;
             height: 120px;
+        }
+}
+
+.checkOut{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+        p{
+            color: $text;
+        }
+        button{
+            margin-top: 20px;
+            width: 15%;
+            height: 50px;
+            color: $websiteColor;
+            border: 1px solid $websiteColor;
+            font-size: 15px;
+            font-weight: 600;
+            background-color: $white;
+            transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;;
+        }
+
+        button:hover{
+            background-color: $websiteColor;
+            color: $white;
         }
 }
