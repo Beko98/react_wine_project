@@ -16,6 +16,6 @@ export function PublicRoutes() {
       <Route path="/aboutUs" element={<AboutUs />} />
       <Route path="/cart" element={<Cart />} />
     </Routes>
-    // </ShopContextProvider>
+    </ShopContextProvider>
   );
 }
