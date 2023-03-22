@@ -9,6 +9,25 @@ import pic_3 from "../images/pic_3.jpg";
 import pic_4 from "../images/pic_4.jpg";
 
 const Carousel = () => {
+  const carouselData = [
+    {
+      imgUrl: pic_1,
+      text: "lorem ipsum",
+    },
+    {
+      imgUrl: pic_2,
+      text: "lorem ipsum",
+    },
+    {
+      imgUrl: pic_3,
+      text: "lorem ipsum",
+    },
+    {
+      imgUrl: pic_4,
+      text: "lorem ipsum",
+    },
+  ];
+
   return (
     <>
       <Swiper
@@ -22,31 +41,16 @@ const Carousel = () => {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <div className="carouselSlide">
-            {" "}
-            <img src={pic_2} alt="pic-2" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="carouselSlide">
-            {" "}
-            <img src={pic_3} alt="pic-3" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="carouselSlide">
-            {" "}
-            <img src={pic_4} alt="pic-4" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="carouselSlide">
-            {" "}
-            <img src={pic_1} alt="pic-1" /> 
-            
-          </div>
-        </SwiperSlide>
+        {carouselData.map((slide, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <div className="carouselSlide">
+                <img src={slide.imgUrl} alt="pic-2" />
+                <h1 className="carouselText">{slide.text}</h1>
+              </div>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </>
   );
