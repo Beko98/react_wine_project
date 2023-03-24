@@ -12,19 +12,27 @@ const Carousel = () => {
   const carouselData = [
     {
       imgUrl: pic_1,
-      text: "lorem ipsum",
+      headline: "DISCOVERING FINE WINES",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel neque minus quos quisquam molestias. Veritatis, ex autem voluptas, eius non.", 
+      button: "View Features",
     },
     {
       imgUrl: pic_2,
-      text: "lorem ipsum",
+      headline: "THE WINE COUNTRY",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel neque minus quos quisquam molestias. Veritatis, ex autem voluptas, eius non.",
+      button: "View Features"
     },
     {
       imgUrl: pic_3,
-      text: "lorem ipsum",
+      headline: "DOMESTIC WINERY",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel neque minus quos quisquam molestias. Veritatis, ex autem voluptas, eius non.",
+      button: "View Features"
     },
     {
       imgUrl: pic_4,
-      text: "lorem ipsum",
+      headline: "THE FINEST BOUQUET",
+      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel neque minus quos quisquam molestias. Veritatis, ex autem voluptas, eius non.",
+      button: "View Features"
     },
   ];
 
@@ -46,7 +54,10 @@ const Carousel = () => {
             <SwiperSlide key={index}>
               <div className="carouselSlide">
                 <img src={slide.imgUrl} alt="pic-2" />
-                <h1 className="carouselText">{slide.text}</h1>
+                
+                <h1 className="carouselHeadline">{slide.headline}</h1>
+                <p className="carouselText">{slide.text}</p>
+                <button className="carouselButton">{slide.button}</button>
               </div>
             </SwiperSlide>
           );
