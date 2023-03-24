@@ -61,7 +61,7 @@
   position: relative;
     .carouselHeadline{
       position: absolute;
-      top: 50%;
+      top: 35%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: $white;
@@ -72,7 +72,7 @@
     }
     .carouselText{
       position: absolute;
-      top: 63%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: $white;
@@ -81,7 +81,7 @@
     }
     .carouselButton{
       position: absolute;
-      top: 75%;
+      top: 65%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 12%;

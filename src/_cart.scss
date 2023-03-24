@@ -22,13 +22,16 @@
         .countHandler{
             display: flex;
                 input{
-                    width: 48px;
-                    height: 48px;
+                    width: 50px;
+                    height: 50px;
                     text-align: center;
+                    border: 1px solid #e1e1e1;
                 }
             button{
                 width: 27px;
                 height: 27px;
+                border: 1px solid #e1e1e1;
+
             }    
             .row{
                 display: flex;
