@@ -22,36 +22,86 @@
   }
 }
 
-.left_2 {
-  width: 73%;
+.sortSection{
+  width: 68.5%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 100px 5px 0 15px;
-  .card_1 {
-    text-align: center;
-    margin-bottom: 100px;
-    width: 30%;
-    img {
-      height: 290px;
-      margin-bottom: 20px;
-      width: 100%;
-      object-fit: cover;
+  justify-content: flex-end;
+  margin-top: 60px;
+    select{
+      padding: 12px;
+      margin-right: 23px;
+    }
+}
+
+.mainDiv{
+  width: 100%;
+  display: flex;
+  .left_2 {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 35px 5px 0 15px;
+    .card_1 {
+      text-align: center;
+      margin-bottom: 100px;
+      width: 30%;
+      img {
+        height: 290px;
+        margin-bottom: 20px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    h2 {
+      margin: 20px 0 20px;
+      font-family: Cinzel, serif;
+      font-size: 20px;
+      color: $text;
+    }
+    h3 {
+      color: $text;
+      font-size: 19px;
+    }
+    .addToCartBtn {
+      margin-top: 20px;
+      width: 50%;
+      height: 10%;
     }
   }
-  h2 {
-    margin: 20px 0 20px;
-    font-family: Cinzel, serif;
-    font-size: 20px;
-    color: $text;
-  }
-  h3 {
-    color: $text;
-    font-size: 19px;
-  }
-  .addToCartBtn {
-    margin-top: 20px;
-    width: 50%;
-    height: 10%;
-  }
+}
+
+.right_2{
+  width: 30%;
+  padding-left: 30px;
+    h2{
+      font-size: 19px;
+      font-family: Cinzel, serif;
+      font-weight: 600;
+      color: $text;
+      margin-bottom: 25px;
+    }
+    p{
+      color: $text;
+      margin-bottom: 15px;
+    }
+
+    .rightProducts{
+      display: flex;
+      margin-bottom: 20px;
+      .column{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+          h2{
+            margin-bottom: 8px;
+          }
+      }
+      img{
+        width: 100%;
+        max-width: 85px;
+        height: 85px;
+        border-radius: 50%;
+      }
+    }
 }
