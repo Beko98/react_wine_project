@@ -1,5 +1,7 @@
 @import "./colors";
 @import "./mixins";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lora:ital@1&family=Old+Standard+TT&family=Playfair+Display:ital@1&family=Tangerine&display=swap');
+
 
 .product_div {
   display: flex;
@@ -74,6 +76,29 @@
 .right_2{
   width: 30%;
   padding-left: 30px;
+    .categories{
+      margin-bottom: 50px;
+        p{
+          transition: filter 0.3s ease-in-out;
+        }
+    }
+    .categories p:hover{
+      color: $websiteColor;
+      cursor: pointer;
+    }
+    .banner{
+      width: 70%;
+      background-color: #b6b4a6;
+      height: 15%;
+        h3{
+          font-family: Cinzel, serif;
+          color: $white;
+          font-weight: 600;
+          margin-bottom: 40px;
+          text-align: center;
+          padding-top: 115px;
+        }
+    }
     h2{
       font-size: 19px;
       font-family: Cinzel, serif;
@@ -89,12 +114,23 @@
     .rightProducts{
       display: flex;
       margin-bottom: 20px;
+      .stars{
+        cursor: pointer;
+        margin-bottom: 5px;
+      }
       .column{
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 15px 15px 0;
           h2{
             margin-bottom: 8px;
+            font-size: 14px;
+            color: $websiteColor;
+            font-family: 'Cinzel', serif;
+            font-family: 'Lora', serif;
+            font-family: 'Old Standard TT', serif;
+            font-family: 'Playfair Display', serif;
+            font-family: 'Tangerine', cursive;
           }
       }
       img{
@@ -102,6 +138,17 @@
         max-width: 85px;
         height: 85px;
         border-radius: 50%;
+      }
+    }
+    .tags{
+        h3{
+          color: $text;
+          font-size: 18px;
+          margin: 45px 0 12px;
+        }
+      .tagPs{
+        color: $text;
+        line-height: 1.6;
       }
     }
 }

@@ -10,7 +10,7 @@ import pic_21 from "../images/pic_21.jpeg";
 import pic_22 from "../images/pic_22.jpeg";
 import pic_23 from "../images/pic_23.jpeg";
 import pic_24 from "../images/pic_24.jpeg";
-
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 
 
@@ -47,6 +47,8 @@ function Product() {
     }
 
   ]
+
+  const [number, setNumber] = useState(0)
 
   
   return (
@@ -88,6 +90,9 @@ function Product() {
    
 
     <div className="right_2">
+      <div className="banner">
+        <h3>BANNER</h3>
+      </div>
       <div className="categories">
           <h2>CATEGORIES</h2>
           <p>Desert Wine (5)</p>
@@ -99,17 +104,43 @@ function Product() {
       
       {rightProducts.map((rights, index) => {
           return (
-            
+            <>
               <div className="rightProducts" key={index}>
                   <img src={rights.img} alt="pic-2" />
                   <div className="column">
                       <h2>{rights.title}</h2>
+                      <div className="stars">
+                      {Array(5)
+                      .fill()
+                      .map((star,index) =>(
+                        number >= index + 1 ? 
+                        <AiFillStar style={{color: '#b1af6a'}} 
+                        onClick = {() => setNumber(index + 1)} 
+                        
+                        />
+                        
+                        : <AiOutlineStar style={{color: '#b1af6a'}}
+                         onClick = {() => setNumber(index + 1)} 
+                         />
+
+                      ))}
+                      </div>
                       <p>${rights.price}</p>
                   </div>
               </div>
-            
+              
+
+
+              </>           
           );
         })}
+
+        <div className="tags">
+          <h3>TAGS</h3>
+          <p className="tagPs">Delicious, Flavor, New, Red, Strong, <br />
+           Sweet, Tasty, White</p>
+        </div>
+
        
 
         
