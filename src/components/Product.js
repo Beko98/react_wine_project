@@ -22,27 +22,27 @@ function Product() {
   const rightProducts = [
     {
       img: pic_20,
-      title: "CATEGORIES",
+      title: "Certan-de-May",
       price: 77.99
     },
     {
       img: pic_21,
-      title: "CATEGORIES",
+      title: "Medoc",
       price: 69.99
     },
     {
       img: pic_22,
-      title: "CATEGORIES",
+      title: "Marcobrunn",
       price: 66.99
     },
     {
       img: pic_23,
-      title: "CATEGORIES",
+      title: "Kohng Blohng",
       price: 55.99
     },
     {
       img: pic_24,
-      title: "CATEGORIES",
+      title: "Moneire",
       price: 57.99
     }
 
