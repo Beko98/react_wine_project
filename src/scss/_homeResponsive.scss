@@ -1,0 +1,19 @@
+@import "./colors";
+@import "./mixins";
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Lora:ital@1&family=Old+Standard+TT&family=Playfair+Display:ital@1&family=Tangerine&display=swap");
+
+
+@media (max-width: 768px){
+    .nav{
+     ul{
+      .languageSwitcher, li{
+        display: none;
+      }
+     }
+     .burgerMenu{
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+     }
+    }
+  }

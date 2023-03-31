@@ -45,9 +45,12 @@ function Cart() {
     </div>
     
     }
+    {totalAmount <= 0 ?
     <div className='shoppingBtnDiv'>
     <button className='cartButtons' onClick={() => navigate("/product")}>Continue Shopping</button>
-    </div>
+    </div> 
+    : ""
+  }
 
     </div>
 

@@ -10,6 +10,10 @@
   justify-content: space-between;
   padding: 10px;
   margin: 15px 100px 15px 100px;
+  .burgerMenu{
+    color: $websiteColor;
+    display: none;
+  }
 
   a {
     text-decoration: none;
@@ -26,6 +30,7 @@
     list-style: none;
     display: flex;
   }
+
 
   .logo {
     width: 100px;
@@ -47,6 +52,46 @@
     cursor: pointer;
   }
 }
+
+.dropdownMenu{
+  display: none;
+  position: absolute;
+  top: 88px;
+  right: 110px;
+  z-index: 2;
+  background-color: $white;
+  width: 300px;
+    &.show{
+        display: block;
+    }
+  .languageSwitcher{
+    align-items: center;
+    margin: 20px 0;
+    border: none;
+    padding: 5px 15px;
+    background-color: $Lswitch;
+    font-weight: 600;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    margin: 10px auto 20px;
+  }
+    li{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0 ;
+      list-style: none;
+        a{
+          text-decoration: none;
+          color: $text;
+        }
+    }
+
+}
+
+
 
 .Carousel-container {
   margin-bottom: 100px;
@@ -295,3 +340,5 @@
     }
   }
 }
+
+

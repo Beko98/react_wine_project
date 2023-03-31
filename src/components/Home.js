@@ -7,6 +7,7 @@ import img_6 from "../images/pic_6.png";
 import img_7 from "../images/pic_7.png";
 import img_8 from "../images/pic_8.png";
 import Footer from "./Footer";
+import "../scss/_homeResponsive.scss"
 
 function Home() {
   return (

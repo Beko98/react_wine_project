@@ -1,12 +1,18 @@
-import React from "react";
+import React,{useState} from "react";
 import vino1 from "../images/vino1.png";
 import { Link, useMatch } from "react-router-dom";
 import { BsCart3 } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
+import{ FaBars } from "react-icons/fa"
 
 function Navbar() {
   const { t } = useTranslation();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleBurgerClick = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   const isAtHomePage = useMatch("/");
   return (
@@ -34,7 +40,27 @@ function Navbar() {
             </Link>
           )}
         </ul>
+        <div className="burgerMenu"  onClick={handleBurgerClick}>
+          <FaBars />
+        </div>
       </nav>
+
+
+      <div className={`dropdownMenu ${isDropdownOpen ? 'show' : ''}`} >
+      <ul>
+          <li>
+            <Link to="/">{t("home")}</Link>
+          </li>
+          <li>
+            <Link to="/product">{t("product")}</Link>
+          </li>
+          <li>
+            <Link to="/aboutUs">{t("aboutUs")}</Link>
+          </li>
+      </ul>
+          <LanguageSwitcher />
+      </div>
+
     </>
   );
 }
