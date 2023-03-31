@@ -26,8 +26,7 @@
 .sortSection {
   width: 68.5%;
   display: flex;
-  justify-content: flex-end;
-  margin-top: 60px;
+  margin: 15px 0 40px;
   select {
     padding: 12px;
     margin-right: 14px;
@@ -47,7 +46,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 35px 5px 0 15px;
+    margin: 120px 5px 0 15px;
     padding-left: 30px;
     .card_1 {
       text-align: center;

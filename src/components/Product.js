@@ -52,7 +52,16 @@ function Product() {
         <ProductDiv title="Product" />
       </div>
 
-      <div className="sortSection">
+      
+      <div className="mainDiv">
+        <div className="left_2">
+          {PRODUCTS.map((product) => (
+            <CartProducts data={product} />
+          ))}
+        </div>
+
+        <div className="right_2">
+        <div className="sortSection">
         <form action="#">
           <label htmlFor="sort"></label>
           <select
@@ -80,15 +89,6 @@ function Product() {
           </select>
         </form>
       </div>
-      <div className="mainDiv">
-        <div className="left_2">
-          {PRODUCTS.map((product) => (
-            <CartProducts data={product} />
-          ))}
-        </div>
-
-        <div className="right_2">
-
 
           <div className="banner">
             <h3>BANNER</h3>
