@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import ProductDiv from "./ProductDiv";
 import { ShopContext } from '../context/shop-context';
 import {CartItem} from "../cart-item"
-import "../_cart.scss"
+import "../scss/_cart.scss"
 import { useNavigate } from 'react-router-dom';
 
 

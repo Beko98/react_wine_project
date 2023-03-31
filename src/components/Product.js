@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import ProductDiv from "./ProductDiv";
-import "../_product.scss";
+import "../scss/_product.scss";
 import { PRODUCTS } from "../products";
 import CartProducts from "./CartProducts";
 import pic_20 from "../images/pic_20.jpeg";

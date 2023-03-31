@@ -30,7 +30,12 @@
   margin-top: 60px;
   select {
     padding: 12px;
-    margin-right: 23px;
+    margin-right: 14px;
+    border: 1px solid $border;
+  }
+  select:focus {
+    outline: none;
+    border: 1px solid $border;
   }
 }
 
@@ -163,7 +168,7 @@
     width: 100%;
     opacity: 0;
     &:hover {
-      opacity: 1;
+      opacity: 1; 
       .addToCartBtn {
         position: absolute;
         top: 160px;
@@ -194,11 +199,11 @@
     padding: 15px 7px;
     margin-top: 20px;
     font-size: 16px;
-    border: 1px solid gainsboro;
+    border: 1px solid $border;
   }
   input[type="search"]:focus {
     outline: none;
-    border: 1px solid gainsboro;
+    border: 1px solid $border;
   }
   
 }
