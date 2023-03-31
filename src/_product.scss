@@ -43,6 +43,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 35px 5px 0 15px;
+    padding-left: 30px;
     .card_1 {
       text-align: center;
       margin-bottom: 100px;
@@ -68,10 +69,13 @@
 }
 
 .right_2 {
+  display: flex;
   width: 30%;
   padding-left: 30px;
+  justify-content: center;
+  flex-direction: column;
   .categories {
-    margin-bottom: 50px;
+    margin: 50px 0 ;
     p {
       transition: filter 0.3s ease-in-out;
     }
@@ -91,6 +95,7 @@
       margin-bottom: 40px;
       text-align: center;
       padding-top: 115px;
+      letter-spacing: 5px;
     }
   }
   h2 {
@@ -115,10 +120,10 @@
     .column {
       display: flex;
       flex-direction: column;
-      padding: 15px 15px 0;
+      padding: 10px 15px 0;
       h2 {
         margin-bottom: 8px;
-        font-size: 14px;
+        font-size: 18px;
         color: $websiteColor;
         font-family: "Cinzel", serif;
         font-family: "Lora", serif;
@@ -138,7 +143,7 @@
     h3 {
       color: $text;
       font-size: 18px;
-      margin: 45px 0 12px;
+      margin: 30px 0 12px;
     }
     .tagPs {
       color: $text;
@@ -150,7 +155,7 @@
 .addToCartEffect {
   position: relative;
   .addToCartEffectChild {
-    background-color: $websiteColor;
+    background-color: $opacityColor;
     position: absolute;
     top: 0;
     left: 0;
@@ -158,15 +163,15 @@
     width: 100%;
     opacity: 0;
     &:hover {
-      opacity: 0.5;
+      opacity: 1;
       .addToCartBtn {
         position: absolute;
         top: 160px;
-        left: 27%;
+        left: 25%;
         transform: translateY(50%);
         transition: transform 0.3s ease-out;
         padding: 15px;
-        width: 45%;
+        width: 50%;
         color: $white;
         background-color: transparent;
         border: 2px solid white;
@@ -180,6 +185,22 @@
       }
     }
   }
+}
+
+.searchProducts{
+  input{
+    width: 100%;
+    max-width: 60%;
+    padding: 15px 7px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 1px solid gainsboro;
+  }
+  input[type="search"]:focus {
+    outline: none;
+    border: 1px solid gainsboro;
+  }
+  
 }
 
 // button {

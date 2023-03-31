@@ -35,11 +35,20 @@ function Cart() {
       {totalAmount > 0 ?
         <div className='checkOut'>
           <p>Subtotal: ${totalAmount }</p>
-          <button onClick={() => navigate("/product")}>Continue Shopping</button>
-          <button>Proceed To Checkout</button>
+          <button className='cartButtons' onClick={() => navigate("/product")}>Continue Shopping</button>
+          <button className='cartButtons'>Proceed To Checkout</button>
         
         </div>
-    : <h1>Your Cart Is Empty</h1> }
+    : 
+    <div className='yourEmptyCart'>
+    <h1>Your Cart Is Empty</h1>
+    </div>
+    
+    }
+    <div className='shoppingBtnDiv'>
+    <button className='cartButtons' onClick={() => navigate("/product")}>Continue Shopping</button>
+    </div>
+
     </div>
 
     <Footer />

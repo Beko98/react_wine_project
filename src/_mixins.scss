@@ -41,5 +41,22 @@
   }
   
 
+@mixin cartButton{
+    .cartButtons{
+      margin-top: 20px;
+      width: 15%;
+      height: 50px;
+      color: $websiteColor;
+      border: 1px solid $websiteColor;
+      font-size: 15px;
+      font-weight: 600;
+      background-color: $white;
+      transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;;
+  }
 
+  .cartButtons:hover{
+      background-color: $websiteColor;
+      color: $white;
+  }
+}
   

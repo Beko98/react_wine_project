@@ -88,6 +88,8 @@ function Product() {
         </div>
 
         <div className="right_2">
+
+
           <div className="banner">
             <h3>BANNER</h3>
           </div>
@@ -137,6 +139,11 @@ function Product() {
               Delicious, Flavor, New, Red, Strong, <br />
               Sweet, Tasty, White
             </p>
+          </div>
+          <div className="searchProducts">
+            <input type="search" placeholder="Search Products..." />
+            
+          
           </div>
         </div>
       </div>
