@@ -1,0 +1,115 @@
+@import "./colors";
+@import "./mixins";
+
+
+.ourStory{
+    text-align: center;
+    h2{
+        margin: 60px auto 20px;
+        font-size: 40px;
+        color: #737272;
+    }
+    hr{
+        width: 5%;
+        margin: 0 auto;
+    }
+    p{
+        width: 30%;
+        margin: 20px auto;
+        font-size: 19px;
+        line-height: 1.6;
+        color: $text;
+    }
+}
+
+
+.imgContainer{
+    background-image: url("../images/pic_5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    margin-bottom: 150px;
+}
+
+
+.iconMainDiv{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+        .iconContentDiv{
+            svg{
+                font-size: 40px;
+                color: $websiteColor;
+            }
+            h2{
+                font-size: 40px;
+                margin: 30px 0 20px;
+                color: $text;
+                font-family: Cinzel,serif;
+            }
+            h3{
+                margin-bottom: 40px;
+                color: $websiteColor;
+                font-size: 30px;
+                font-family: "Cinzel", serif;
+                font-family: "Lora", serif;
+                font-family: "Old Standard TT", serif;
+                font-family: "Playfair Display", serif;
+                font-family: "Tangerine", cursive;
+            }
+
+        }
+}
+
+@include line;
+
+.redWines{
+    display: flex;
+    justify-content: space-around;
+    width: calc(100% - 200px);
+    .insideDiv{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 62%;
+        margin: auto 0;
+            h6{
+                font-size: 18px;
+                color: $text;
+                margin-bottom: 10px;
+            }
+            h2{
+                font-size: 25px;
+                color: $text;
+                font-family: Cinzel,serif;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 18px;
+                color: $text;
+                margin-bottom: 30px;
+                line-height: 1.5;
+            }
+            button{
+                width: 30%;
+                padding: 15px;
+                border: 1px solid $websiteColor;
+                color: $websiteColor;
+                transition: filter 0.3s ease-in-out;
+                background-color: $white;
+                cursor: pointer;
+                    &:hover{
+                        background-color: $websiteColor;
+                        color: $white  
+                    }
+            }
+    }
+
+   
+
+}
+@include line;
+@include whiteWine;

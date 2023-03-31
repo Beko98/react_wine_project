@@ -60,3 +60,57 @@
   }
 }
   
+
+@mixin line {
+  .line{
+    width: 90%;
+}
+}
+
+
+@mixin whiteWine{
+  .whiteWines{
+    display: flex;
+    justify-content: space-around;
+    width: calc(100% - 100px);
+    .insideDiv_2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 62%;
+        margin: auto 0;
+        align-items: end;
+            h6{
+                font-size: 18px;
+                color: $text;
+                margin-bottom: 10px;
+            }
+            h2{
+                font-size: 25px;
+                color: $text;
+                font-family: Cinzel,serif;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 18px;
+                color: $text;
+                margin-bottom: 30px;
+                line-height: 1.5;
+                text-align: end;
+            }
+            button{
+                width: 30%;
+                padding: 15px;
+                border: 1px solid $websiteColor;
+                color: $websiteColor;
+                transition: filter 0.3s ease-in-out;
+                background-color: $white;
+                cursor: pointer;
+                    &:hover{
+                        background-color: $websiteColor;
+                        color: $white  
+                    }
+            }
+    }
+  }
+}
