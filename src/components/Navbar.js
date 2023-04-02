@@ -4,7 +4,11 @@ import { Link, useMatch } from "react-router-dom";
 import { BsCart3 } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
-import{ FaBars } from "react-icons/fa"
+import{ FaBars } from "react-icons/fa";
+import "../scss/_responsive.scss"
+
+
+
 
 function Navbar() {
   const { t } = useTranslation();
@@ -17,6 +21,8 @@ function Navbar() {
   const isAtHomePage = useMatch("/");
   return (
     <>
+    <div className="navContainer">
+
       <nav className="nav">
         <Link to="/">
           <img className="logo" src={vino1} alt="wg" />
@@ -44,6 +50,7 @@ function Navbar() {
           <FaBars />
         </div>
       </nav>
+    </div>
 
 
       <div className={`dropdownMenu ${isDropdownOpen ? 'show' : ''}`} >
@@ -59,6 +66,12 @@ function Navbar() {
           </li>
       </ul>
           <LanguageSwitcher />
+
+          {!isAtHomePage && (
+            <Link to="/cart">
+              <BsCart3 className="cart" />
+            </Link>
+          )}
       </div>
 
     </>

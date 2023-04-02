@@ -9,6 +9,8 @@ import { BsHeart } from "react-icons/bs";
 import { TbLeaf } from "react-icons/tb";
 import pic_27 from "../images/pic_27.png"
 import pic_28 from "../images/pic_28.jpeg"
+import "../scss/_responsive.scss"
+
 
 
 
@@ -29,6 +31,9 @@ function AboutUs() {
         </div>
         <div className="imgContainer"></div>
     </div>
+
+
+<div className="responsiveDiv">
 
     <div className="iconMainDiv">
       <div className="iconContentDiv">
@@ -52,6 +57,7 @@ function AboutUs() {
         <h3>happy customers</h3>
       </div>
     </div>
+</div>
 
     <hr  className="line"/>
     <div className="wineContainer">

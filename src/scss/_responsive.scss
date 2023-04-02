@@ -1,0 +1,335 @@
+@import "./colors";
+@import "./mixins";
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Lora:ital@1&family=Old+Standard+TT&family=Playfair+Display:ital@1&family=Tangerine&display=swap");
+
+
+@media (max-width: 768px){
+    .nav{
+     ul{
+      .languageSwitcher, li{
+        display: none;
+      }
+     }
+     .burgerMenu{
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+     }
+     .cart{
+        display: none;
+     }
+    }
+
+    .dropdownMenu{
+        .cart{
+            text-decoration: none;
+            color: $websiteColor;
+            font-size: 18px;
+            padding-top: 5px;
+            display: flex;
+            margin: 0 auto 20px;
+        }
+    }
+
+    .carouselSlide{
+        .carouselHeadline{
+            font-size: 40px;
+        }
+        .carouselText{
+            font-size: 18px;
+        }
+        .carouselButton{
+            width: 18%;
+            height: 10%;
+            top: 67%;
+        }
+    }
+
+.container{
+    .repeat{
+       gap: 100px;     
+        .left{
+            .leftText{
+                text-align: end;
+            }
+        }
+            .right{
+                h2{
+                    display: flex;
+                }
+                h3{
+                    display: flex;
+                }
+            }
+            p{
+                text-align: start;
+            }
+    }
+}
+
+
+
+
+.footer_container{
+    flex-direction: column;
+        .footer_divs{
+            width: 100%;
+            margin: 50px 50px 0;
+                img{
+                    width: 180px;
+                }
+        }
+}
+
+
+
+
+
+  
+.root{
+    .mainDiv{
+        flex-direction: column;
+            .left_2{
+                margin: 120px 0 0;
+                padding: 0 50px;
+                width: 90% ;
+                .card_1{
+                    width: calc(50% - 30px) ;
+                    
+                }
+            }
+            .right_2{
+                width: 60%;
+                margin: 0 0 50px 40px;
+                    .banner{
+                        height: 200px;
+                            h3{
+                                display: flex;
+                                justify-content: center;
+                                padding-top: 100px;
+                            }
+                    }
+            }
+    }
+}
+// .mainDiv{
+//     flex-direction: column;
+//         .left_2{
+//             width: 90% !important;
+//         }
+//         .card_1{
+//             width: calc(50% - 55px) !important;
+//         }
+//         .right_2{
+//             width: 60%;
+//             margin: 0 0 50px 50px;
+//                 .banner{
+//                     height: 200px;
+//                         h3{
+//                             display: flex;
+//                             justify-content: center;
+//                             padding-top: 100px;
+//                         }
+//                 }
+//         }
+// }
+
+.section{
+    .ourStory{
+        p{
+            width: 67%;
+            text-align: justify;
+            direction: revert;
+        }
+    }
+}
+
+.responsiveDiv{
+    .iconMainDiv {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+
+.wineContainer{
+    .redWines{
+        width: calc(100% - 20px);
+    }
+    .whiteWines{
+        width: calc(100% + 32px);
+    }
+}
+
+.cart{
+    .shoppingBtnDiv{
+        .cartButtons{
+            width: 25%;
+        }
+    }
+    .checkOut{
+        .cartButtons{
+            width: 25%;
+        }
+    }
+}
+
+}
+
+
+
+@media (max-width: 430px){
+
+    .navContainer{
+        .nav{
+            display: flex;
+            align-items: center;
+            width: calc(100% - 20px);
+            padding: 20px 0;
+            margin: 0 0;
+        }
+    }
+    
+    .dropdownMenu{
+        top: 78px;
+        right: 0px;
+    }
+.responsiveProductsDiv{
+
+    .product_div{
+        flex-direction: column;
+        align-items: start;
+        justify-content: normal;
+            h2{
+                margin: 0;
+                padding: 50px 0 10px 30px;
+            }
+            h3{
+                padding-left: 30px;
+            }
+    }
+}
+
+
+
+    .carouselSlide{
+        .carouselHeadline{
+            font-size: 21px;
+            top: 23%;
+            width: 50%;
+            line-height: 1.2;
+        }
+        .carouselText{
+            font-size: 12px;
+            top: 45%;
+        }
+        .carouselButton{
+            width: 30%;
+            height: 16%;
+            top: 70%;
+        }
+    }
+
+
+    .title{
+        text-align: center;
+            h2{
+                width: 50%;
+            }
+    }
+
+
+.root{
+    .container{
+        .repeat{
+            flex-direction: column;
+                .left{
+                    max-width: 75%;
+                    display: flex;
+                    align-items: center;
+                        .leftText{
+                            text-align: center;
+                        }
+                }
+                .right{
+                    max-width: 75%;
+                    display: flex;
+                    align-items: center;
+                    padding-top: 0;
+                        .rightText{
+                            text-align: center;
+                        }
+                }
+        }
+    }
+}
+
+
+
+.footer_container{
+    .footer_divs{
+        width: 70%;
+            .footerContent{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+            img{
+                width: 125px;
+            }
+    }
+}
+
+
+.root{
+    .mainDiv{
+        .left_2{
+            flex-direction: column;
+            align-items: center;
+            padding: 0 0;
+                .card_1{
+                    width: 90%;
+                    margin-left: 40px;
+                }
+        }
+        .right_2{
+            margin: 0 0 50px 5px;
+                .banner{
+                    width: 285px;
+                }
+                .searchProducts{
+                    width: 400px;
+                }
+        }
+    }
+}
+
+.cart{
+    .shoppingBtnDiv{
+    .cartButtons{
+        width: 50%;
+    }
+    }
+    .cartItems{
+        .cartItem{
+            display: flex;
+            flex-direction: column;
+            margin: 40px 0;
+                .countHandler{
+                    display: flex;
+                    flex-direction: column;
+                        button{
+                            width: 28px;
+                        }
+                }
+        }
+    }
+    .checkOut{
+        .cartButtons{
+            width: 50%;
+        }
+    }
+}
+}

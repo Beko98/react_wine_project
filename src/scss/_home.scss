@@ -199,11 +199,6 @@
 }
 
 .container {
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: center;
-  // align-items: center;
-  // gap: 140px;
   .repeat {
     display: flex;
     flex-direction: row;
@@ -211,72 +206,74 @@
     align-items: center;
     gap: 140px;
     margin-bottom: 100px;
-  }
 
-  .center_images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    img {
-      max-width: 100%;
-      width: 100%;
+    .center_images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
+      .bottle {
+        width: 85%;
+      }
     }
-    .bottle {
-      width: 85%;
-    }
-  }
-
-  .left {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: self-end;
-    h2 {
+  
+    .left {
       font-size: 20px;
-      font-family: cursive, sans-serif;
-      margin-bottom: 15px;
-      color: $websiteColor;
-    }
-    h3 {
-      font-size: 30px;
-      margin-bottom: 20px;
-      // font-family: catamaran, sans-serif;
-      font-family: Cinzel, serif;
-      color: $text;
-    }
-    p {
-      margin-bottom: 15px;
-      max-width: 100%;
-      width: 80%;
-      font-size: 18px;
+      display: flex;
+      flex-direction: column;
       align-items: self-end;
-      color: $text;
+      h2 {
+        font-size: 20px;
+        font-family: cursive, sans-serif;
+        margin-bottom: 15px;
+        color: $websiteColor;
+      }
+      h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        // font-family: catamaran, sans-serif;
+        font-family: Cinzel, serif;
+        color: $text;
+      }
+      .leftText {
+        margin-bottom: 15px;
+        max-width: 100%;
+        width: 80%;
+        font-size: 18px;
+        text-align: end;
+        color: $text;
+      }
     }
-  }
-  .right {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 120px;
-    h2 {
+  
+    .right {
       font-size: 20px;
-      font-family: cursive, sans-serif;
-      margin-bottom: 15px;
-      color: $websiteColor;
-    }
-    h3 {
-      font-size: 30px;
-      margin-bottom: 20px;
-      color: $text;
-    }
-    p {
-      margin-bottom: 15px;
-      max-width: 100%;
-      color: $text;
-      width: 80%;
-      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      padding-top: 120px;
+      h2 {
+        font-size: 20px;
+        font-family: cursive, sans-serif;
+        margin-bottom: 15px;
+        color: $websiteColor;
+      }
+      h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: $text;
+      }
+      .rightText {
+        margin-bottom: 15px;
+        max-width: 100%;
+        color: $text;
+        width: 80%;
+        font-size: 18px;
+      }
     }
   }
+
 }
 
 .stick {

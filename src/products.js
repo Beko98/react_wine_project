@@ -1,3 +1,4 @@
+import pic_15 from "../src/images/pic_15.jpg";
 import pic_16 from "../src/images/pic_16.jpeg";
 import pic_17 from "../src/images/pic_17.jpeg";
 import pic_18 from "../src/images/pic_18.jpeg";
@@ -7,6 +8,9 @@ import pic_21 from "../src/images/pic_21.jpeg";
 import pic_22 from "../src/images/pic_22.jpeg";
 import pic_23 from "../src/images/pic_23.jpeg";
 import pic_24 from "../src/images/pic_24.jpeg";
+import pic_25 from "../src/images/pic_25.jpeg";
+import pic_26 from "../src/images/pic_26.jpeg";
+
 
 export const PRODUCTS = [
   {
@@ -62,5 +66,23 @@ export const PRODUCTS = [
     productName: "ZIND-HUMBRECHT",
     price: 99.81,
     productImage: pic_24,
+  },
+  {
+    id: 10,
+    productName: "ZIND-HUMBRECHT",
+    price: 99.81,
+    productImage: pic_25,
+  },
+  {
+    id: 11,
+    productName: "ZIND-HUMBRECHT",
+    price: 99.81,
+    productImage: pic_26,
+  },
+  {
+    id: 12,
+    productName: "ZIND-HUMBRECHT",
+    price: 99.81,
+    productImage: pic_15,
   },
 ];

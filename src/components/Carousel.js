@@ -7,6 +7,8 @@ import pic_1 from "../images/pic_1.jpg";
 import pic_2 from "../images/pic_2.jpg";
 import pic_3 from "../images/pic_3.jpg";
 import pic_4 from "../images/pic_4.jpg";
+import "../scss/_responsive.scss"
+
 
 const Carousel = () => {
   const carouselData = [

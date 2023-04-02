@@ -11,6 +11,10 @@ import pic_22 from "../images/pic_22.jpeg";
 import pic_23 from "../images/pic_23.jpeg";
 import pic_24 from "../images/pic_24.jpeg";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import "../scss/_responsive.scss"
+
+
+
 
 function Product() {
   const [sortedProducts, setsortedProducts] = useState(PRODUCTS);
@@ -48,7 +52,7 @@ function Product() {
   return (
     <>
       <Navbar />
-      <div>
+      <div className="responsiveProductsDiv">
         <ProductDiv title="Product" />
       </div>
 

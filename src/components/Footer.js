@@ -59,18 +59,22 @@ function Footer() {
           </div>
         </div>
         <div className="footer_divs">
+          
           <h6>January 20, 2017</h6>
           <h3>Etiam risus nunc, feugiat id commodo ut, laoreet in augue</h3>
           <h6>December 18, 2018</h6>
           <h3>Vestibulum scelerisque molestie enim, in scelerisque arcu</h3>
+          
         </div>
         <div className="footer_divs">
+          <div className="footerContent">
           <img src={pic_9} alt="pic_9" />
           <img src={pic_10} alt="pic_10" />
           <img src={pic_11} alt="pic_11" />
           <img src={pic_12} alt="pic_12" />
           <img src={pic_13} alt="pic_13" />
           <img src={pic_14} alt="pic_14" />
+          </div>
         </div>
       </div>
     </>
