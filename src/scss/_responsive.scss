@@ -2,7 +2,7 @@
 @import "./mixins";
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Lora:ital@1&family=Old+Standard+TT&family=Playfair+Display:ital@1&family=Tangerine&display=swap");
 
-
+//Tablets
 @media (max-width: 768px){
     .nav{
      ul{
@@ -179,7 +179,7 @@
 }
 
 
-
+//Phones
 @media (max-width: 430px){
 
     .navContainer{
