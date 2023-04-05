@@ -20,7 +20,7 @@ function AboutUs() {
   return (
     <>
       <Navbar />
-      <div>
+      <div className="responsiveProductsDiv">
       <ProductDiv title="About Us" />
 
     <div className="section">
@@ -32,8 +32,7 @@ function AboutUs() {
         <div className="imgContainer"></div>
     </div>
 
-
-<div className="responsiveDiv">
+</div>
 
     <div className="iconMainDiv">
       <div className="iconContentDiv">
@@ -57,7 +56,6 @@ function AboutUs() {
         <h3>happy customers</h3>
       </div>
     </div>
-</div>
 
     <hr  className="line"/>
     <div className="wineContainer">
@@ -80,7 +78,6 @@ function AboutUs() {
         </div>
       <img src={pic_28} alt="pic_28" />
       </div>
-    </div>
 
 
 

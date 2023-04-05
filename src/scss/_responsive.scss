@@ -181,6 +181,51 @@
 
 //Phones
 @media (max-width: 430px){
+  
+    .publicRoutes{
+        .iconMainDiv{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 20px;  
+        }
+    }
+
+
+    .wineContainer{
+        .redWines{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+                img{
+                    width: 50%;
+                    margin: 0 auto;
+                }
+                .insideDiv{
+                    margin: 20px auto;
+                        button{
+                            width: 60%;
+                        }
+                }
+        }
+
+        .whiteWines{
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+                img{
+                    width: 50%;
+                    margin: 0 auto;
+                }
+                .insideDiv_2{
+                    margin: 20px auto;
+                        button{
+                            width: 60%;
+                        }
+                }
+        }
+
+    }
 
     .navContainer{
         .nav{

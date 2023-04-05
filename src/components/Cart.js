@@ -17,7 +17,7 @@ function Cart() {
   return (
     <>
     <Navbar />
-    <div>
+    <div className='responsiveProductsDiv'>
     <ProductDiv title="Cart" />
     </div>
 
