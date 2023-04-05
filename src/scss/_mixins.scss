@@ -79,7 +79,7 @@
         width: 100%;
         max-width: 62%;
         margin: auto 0;
-        align-items: end;
+        align-items: flex-end;
             h6{
                 font-size: 18px;
                 color: $text;
@@ -96,7 +96,7 @@
                 color: $text;
                 margin-bottom: 30px;
                 line-height: 1.5;
-                text-align: end;
+                text-align: flex-end;
             }
             button{
                 width: 30%;

@@ -18,7 +18,6 @@ import "../scss/_responsive.scss"
 
 function Product() {
   const [sortedProducts, setsortedProducts] = useState(PRODUCTS);
-  const [sort, setSort] = useState("highest");
   const rightProducts = [
     {
       img: pic_20,
@@ -84,10 +83,10 @@ function Product() {
               }
             }}
           >
-            <option onClick={() => setSort("lowest")} value="lowest">
+            <option  value="lowest">
               Sort By Price: low to high
             </option>
-            <option onClick={() => setSort("highest")} value="highest">
+            <option  value="highest">
               Sort By Price: high to low
             </option>
           </select>
