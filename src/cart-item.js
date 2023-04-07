@@ -25,7 +25,7 @@ export const CartItem = (props) => {
             </div>
         </div>
 
-        <p>Subtotal: ${totalAmount }</p>
+        <p>Total: ${totalAmount }</p>
         
 
         
